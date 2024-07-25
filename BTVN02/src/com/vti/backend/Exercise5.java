@@ -124,6 +124,8 @@ public class Exercise5 {
 	}
 
 	// Question 4
+	
+	// Kiem tra nam nhuan
 	public static boolean checkNamNhuan(int year) {
 		if (year % 4 == 0) {
 			if (year % 100 == 0) {
@@ -140,6 +142,7 @@ public class Exercise5 {
 		}
 	}
 
+	// tinh so ngay cua thang 2 trong nam
 	public static int tinhNgayThangHai(int nam) {
 		if (checkNamNhuan(nam)) {
 			return 29;
@@ -148,11 +151,13 @@ public class Exercise5 {
 		}
 	}
 
+	// lay ngay trong thang
 	public static int layNgayTrongThang(int nam, int thang) {
 		YearMonth yearMonth = YearMonth.of(nam, thang);
 		return yearMonth.lengthOfMonth();
 	}
 
+	// Kiem tra do dai cua du lieu nhap vao ngay, thang, nam
 	public static int checkDoDai(int input) {
 		String numberStr = Integer.toString(input);
 		if (input < 0) {
@@ -426,6 +431,7 @@ public class Exercise5 {
 		System.out.println("Lua chon cua ban la:");
 	}
 
+	// Kiem tra co muon tiep tuc hay khong
 	public static boolean isContinue() {
 		boolean checkInput = false;
 		try {
@@ -519,6 +525,7 @@ public class Exercise5 {
 		}
 	}
 
+	// Kiem tra username co trong danh sach account hay khong
 	public static boolean checkUserNameInAccount(String userNameAccount) {
 		for (Account account : listAccount) {
 			if (account.getUserName().equals(userNameAccount)) {
@@ -528,6 +535,7 @@ public class Exercise5 {
 		return false;
 	}
 
+	// lay accout tu username
 	public static Account getDataAcount(String userNameAccount) {
 		Account acc = null;
 		for (Account account : listAccount) {
@@ -558,6 +566,7 @@ public class Exercise5 {
 		}
 	}
 
+	// Kiem tra groupname co trong list group hay khong
 	public static boolean checkGroupNameInGroup(String groupName) {
 		ArrayList<Group> listGroup = new ArrayList<Group>();
 		listGroup = fakeDataGroup();
@@ -569,6 +578,7 @@ public class Exercise5 {
 		return false;
 	}
 
+	// lay group tu groupname
 	public static Group getDataGroup(String groupName) {
 		Group g = null;
 		ArrayList<Group> listGroup = new ArrayList<Group>();

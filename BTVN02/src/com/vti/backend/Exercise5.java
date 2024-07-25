@@ -438,17 +438,15 @@ public class Exercise5 {
 	}
 	
 	// Question 9
-	
-	
-//	public void 
+
 	public static void main(String[] args) throws Exception {
-//		nhapSoNguyen();
-//		nhapSoThuc();
-//		nhapHoTen();
-//		nhapNgaySinhNhat();
-//		createAcocunt();
-//		createDepartment();
-//		inputValueFromConsole();
-//		menuOption();
+		nhapSoNguyen();
+		nhapSoThuc();
+		nhapHoTen();
+		nhapNgaySinhNhat();
+		createAcocunt();
+		createDepartment();
+		inputValueFromConsole();
+		menuOption();
 	}
 }
